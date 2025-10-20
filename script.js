@@ -11,14 +11,20 @@ let a4 = document.getElementById("a4");
 let as4 = document.getElementById("a#4");
 let b4 = document.getElementById("b4");
 let c5 = document.getElementById("c5");
-
-
+let vol = document.querySelector(".volume-slider input");
+let volVal = 0.5;
 
 
 function play(note)
 {
     let audio = new Audio(`tunes/${note}.mp3`);
+    audio.volume = volVal;
     audio.play();
+}
+
+const changeVolume = (e) =>
+{
+    volVal = e.target.value
 }
 
 c4.addEventListener("click", () => play("c4"));
@@ -34,3 +40,5 @@ a4.addEventListener("click", () => play("a4"));
 as4.addEventListener("click", () => play("as4"));
 b4.addEventListener("click", () => play("b4"));
 c5.addEventListener("click", () => play("c5"));
+
+vol.addEventListener("input", changeVolume)

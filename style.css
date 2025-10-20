@@ -3,14 +3,39 @@ body
     background: turquoise;
 }
 
+
+button
+{
+    border-radius: 8px;
+    border: none;
+}
+
 .black
 {
+    height: 100px;
     background-color: black;
     color: white;
+    z-index: 1;
+    
+
 }
 
 .white
 {
+    height: 150px;
     background-color: white;
     color: black;
+}
+
+.volume-slider
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.volume-slider input
+{
+    accent-color: white;
+    margin-left: 10px;
 }
