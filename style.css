@@ -31,6 +31,8 @@ button
 {
     display: flex;
     justify-content: center;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
