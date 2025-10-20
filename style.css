@@ -1,4 +1,16 @@
-body {
-    height: 100%;
-    width: 100%;
+body
+{
+    background: turquoise;
+}
+
+.black
+{
+    background-color: black;
+    color: white;
+}
+
+.white
+{
+    background-color: white;
+    color: black;
 }
