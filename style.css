@@ -3,6 +3,17 @@ body
     background: turquoise;
 }
 
+#wrapper
+{
+    margin: 0 auto;
+    justify-self: center;
+    background: rgb(130, 161, 158);
+    border-radius: 10px;
+    margin: 5%;
+    height: 400px;
+    width: 500px;
+    outline: solid 2px black;
+}
 
 button
 {
@@ -20,17 +31,27 @@ button
 
 }
 
+.key
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
 .white
 {
     height: 150px;
     background-color: white;
     color: black;
+
 }
+
 
 .volume-slider
 {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
 
